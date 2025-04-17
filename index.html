@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel Pemerintahan SBY-JK</title>
+    <style>
+                body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #2b2d42, #4a4e69); /* Gradasi warna maskulin */
+        color: #ddd;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      header {
+        background: linear-gradient(90deg, #1b1b2f, #162447); /* Gradasi maskulin */
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+        animation: slideDown 1s ease, fadeInZoom 1s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      nav {
+        background: linear-gradient(90deg, #1b1b2f, #162447);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav ul li {
+        margin: 0;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 15px 25px;
+        color: #e0e1dd;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        position: relative;
+      }
+
+      nav ul li a::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        width: 0;
+        height: 3px;
+        background: #3ab6d9;
+        transition: width 0.4s ease, left 0.4s ease;
+      }
+
+      nav ul li a:hover::after {
+        width: 100%;
+        left: 0;
+      }
+
+      nav ul li a:hover {
+        color: #4f86da;
+        transform: scale(1.05); /* Efek hover yang lebih elegan */
+      }
+
+      .content {
+        padding: 50px;
+        background: #1f1f2e;
+        margin: 30px auto;
+        width: 85%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        border-radius: 16px;
+        animation: fadeInUp 1s ease-in-out, subtleGlow 3s infinite alternate;
+        transition: transform 0.5s;
+      }
+
+      .content:hover {
+        transform: translateY(-10px) scale(1.03);
+      }
+
+      footer {
+        background: linear-gradient(90deg, #1b1b2f, #162447);
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+        margin-top: 50px;
+        box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3);
+        animation: slideUp 1s ease, fadeInZoom 1s ease;
+      }
+
+      /* Animasi */
+
+      @keyframes fadeInZoom {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes subtleGlow {
+        from {
+          box-shadow: 0 0 20px rgba(62, 215, 179, 0.3);
+        }
+        to {
+          box-shadow: 0 0 40px rgba(82, 226, 176, 0.7);
+        }
+      }
+
+      .animate-slide {
+        animation: slideInRight 0.8s ease forwards;
+      }
+
+      </style>
+  
+  
+  </head>
+
+  <body>
+    <header>
+      <h1>Pemerintahan SusiloBambangYudhoyono - Jusuf Kalla</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#" onclick="loadContent('Kelompok')">Kelompok</a></li>
+        <li><a href="#" onclick="loadContent('menteri')">Susunan Menteri</a></li>
+        <li><a href="#" onclick="loadContent('prestasi')">Prestasi</a></li>
+        <li><a href="#" onclick="loadContent('kelebihan')">Kelebihan & Kekurangan</a></li>
+        <li><a href="#" onclick="loadContent('tujuan')">Tujuan Pemerintahan</a></li>
+        <li><a href="#" onclick="loadContent('ideologi')">Ideologi dan Politik</a></li>
+        <li><a href="#" onclick="loadContent('ekonomi')">Sistem Ekonomi</a></li>
+        <li><a href="#" onclick="loadContent('Kesimpulan')">Kesimpulan</a></li>
+      </ul>
+    </nav>
+
+    <main id="content" class="content">
+      <h2>Selamat Datang di Artikel Pemerintahan SusiloBambangYudhoyono - Jusuf Kalla</h2>
+      <p>Silakan pilih menu di atas untuk mendapatkan informasi lebih lanjut tentang topik yang Anda minati.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Pemerintahan SusiloBambangYudhoyono - Jusuf Kalla</p>
+    </footer>
+
+    <script>
+      const data = {
+        Kelompok: `
+          <h2>Kelompok 12</h2>
+          <ul>
+            <li>Anggota Kelompok:</li>
+            <li>Satria Bima Afriandri-28</li>
+            <li>Roni Firzatullah-13</li>
+          </ul>
+            `,
+        menteri: `
+          <h2>Daftar Menteri Kabinet Indonesia Bersatu I (2004–2009)</h2>
+          <ul>
+            <li>Menko Perekonomian: Aburizal Bakrie</li>
+            <li>Menko Polhukam: Widodo AS</li>
+            <li>Menko Kesra: Alwi Shihab (2004–2005), digantikan oleh Aburizal Bakrie</li>
+            <li>Menteri Keuangan: Jusuf Anwar (2004–2005), digantikan oleh Sri Mulyani Indrawati</li>
+            <li>Menteri Luar Negeri: Hassan Wirajuda</li>
+            <li>Menteri Pertahanan: Juwono Sudarsono</li>
+            <li>Menteri Pendidikan Nasional: Bambang Sudibyo</li>
+            <li>Menteri Perdagangan: Mari Elka Pangestu</li>
+            <li>Menteri Hukum dan HAM: Hamid Awaludin</li>
+          </ul>
+        `,
+        prestasi: `
+          <h2>Prestasi Pemerintahan SBY-JK</h2>
+          <ul>
+            <li> Ekonomi Stabil dan Pertumbuhan Positif</li>
+            <li> Penanganan Bencana (Tsunami Aceh 2004)</li>
+            <li> Perdamaian Aceh (2005)</li>
+            <li> Program BLT (Bantuan Langsung Tunai)</li>
+            <li> Reformasi Birokrasi dan Good Governance</li>
+            <li> Pendidikan dan Kesehatan (ASKESKIN, anggaran 20% APBN)</li>
+          </ul>
+        `,
+        kelebihan: `
+          <h2>Kelebihan dan Kekurangan Pemerintahan SBY-JK</h2>
+          <h3>Kelebihan:</h3>
+          <ul>
+            <li>Stabilitas politik dan ekonomi</li>
+            <li> Perdamaian Aceh</li>
+            <li> Reformasi birokrasi dan pendidikan</li>
+          </ul>
+          <h3>Kekurangan:</h3>
+          <ul>
+            <li> Kasus Lumpur Lapindo</li>
+            <li> Kenaikan harga BBM</li>
+            <li> Kasus korupsi di beberapa kementerian</li>
+          </ul>
+        `,
+        tujuan: `
+          <h2>Tujuan Pemerintahan SBY-JK</h2>
+          <ul>
+            <li>Meningkatkan kesejahteraan rakyat</li>
+            <li>Membangun pemerintahan yang transparan dan bebas korupsi</li>
+            <li>Memperbaiki infrastruktur dan pelayanan publik</li>
+            <li>Meningkatkan investasi dan daya saing ekonomi Indonesia</li>
+          </ul>
+        `,
+        ideologi: `
+          <h2>Ideologi dan Sistem Politik</h2>
+          <ul>
+            <li>Pancasila dan UUD 1945</li>
+            <li>Demokrasi multipartai dengan pemilu langsung</li>
+            <li>Pemerintahan berbasis koalisi yang melibatkan partai-partai besar seperti Demokrat, Golkar, dan PKS</li>
+          </ul>
+        `,
+        ekonomi: `
+          <h2>Sistem Ekonomi</h2>
+          <ul>
+            <li>Kapitalisme dengan ekonomi kesejahteraan</li>
+            <li>Fokus pada investasi dan pertumbuhan ekonomi berbasis pasar</li>
+            <li>Meningkatkan infrastruktur dan daya saing industri</li>
+            <li>Menjalankan kebijakan fiskal yang lebih ketat dengan pengurangan subsidi BBM</li>
+            </ul>
+        `,
+        Kesimpulan: `
+        <h2>Kesimpuln Masa Pemerintahan SBY-JK</h2>
+        <li>Pemerintahan Susilo Bambang Yudhoyono dan Jusuf Kalla (2004–2009) membawa sejumlah perubahan signifikan bagi Indonesia. Di bawah Kabinet Indonesia Bersatu I, mereka berhasil menjaga stabilitas politik dan ekonomi, dengan pertumbuhan ekonomi rata-rata 5-6% per tahun. Pencapaian besar lainnya termasuk penanganan bencana tsunami Aceh 2004, keberhasilan perdamaian Aceh melalui Perjanjian Helsinki 2005, dan implementasi berbagai program kesejahteraan seperti Bantuan Langsung Tunai (BLT) dan ASKESKIN.
+          Dalam aspek tata kelola, pemerintahan ini mendorong reformasi birokrasi, memperkuat peran Komisi Pemberantasan Korupsi (KPK), serta memulai penerapan sistem e-KTP. Di bidang sosial, mereka meningkatkan anggaran pendidikan hingga 20% APBN dan memperluas akses layanan kesehatan bagi masyarakat miskin.
+          Namun, di samping berbagai capaian positif, terdapat tantangan dan kontroversi yang dihadapi. Kasus lumpur Lapindo, kenaikan harga BBM yang membebani rakyat, serta kasus korupsi di beberapa kementerian menjadi catatan kritis dalam masa kepemimpinan ini.
+          Secara keseluruhan, pemerintahan SBY-JK berhasil meletakkan dasar bagi stabilitas politik dan ekonomi, mendorong demokratisasi melalui pemilu langsung, serta memperkuat sektor kesejahteraan sosial meskipun dihadapkan pada berbagai tantangan kompleks sepanjang masa jabatan mereka.</li>
+`
+      };
+    
+
+      function loadContent(section) {
+        const contentDiv = document.getElementById("content");
+        contentDiv.innerHTML = data[section] || "<p>Data tidak ditemukan.</p>";
+      }
+    </script>
+  </body>
+</html>
